@@ -1,7 +1,7 @@
 # Learning Java
 
 ## Principles of programming B:
-### Things to be covered ths semester
+### Things to be covered this semester(July-November 2023)
   - Implementnig iteration control structures in programs (Chapter 3 & 4).
   - Creating modularised iterative programs.(Chapter 5)
   - Using characters to manipulate data in programs.(Chapter 14.2 & 14.5)
