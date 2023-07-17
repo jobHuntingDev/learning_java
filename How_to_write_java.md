@@ -76,7 +76,7 @@ public class PrintInput{
 - Int: keyboard.nextInt();
 - Double: keyboard.nextDouble();
 
-## Conditionals
+## Conditionals(Selection control structures)
 
 **If statements:**
 
@@ -106,3 +106,56 @@ switch(code){
 	default:
 		status = "Invalid code";
 }
+```
+
+## Loops(Iteration control structures)
+
+**While loops:**
+
+```java
+while (cAnswer == 'Y'){
+ System.out.println("This is a while loop");
+}
+```
+
+**Do while loops:**
+
+```java
+do
+{
+ System.out.println("This is a do while loop");
+}while (cAnswer == 'Y');
+```
+
+**for loops:**
+
+```java
+for (iCounter = 1; iCounter <= iHowmany; iCounter ++){
+ System.out.println("This is a for loop");
+}
+```
+
+## Methods: Static Methods
+
+**Value returning methods:**
+
+```java
+public static double CelcToFahr(double rCelc){
+ double rFahr;
+ rFahr = rCelc * (9 / 5.0) + 32;
+ return rFahr;
+}
+``` 
+
+**Void methods:**
+
+```java
+public static void checkAge(int iAge){
+ if (iAge < 18){
+  System.out.println("You can't register , you are not old enough!");
+ }
+ else{
+  System.out.println("You can register!");
+}
+}
+```
