@@ -197,3 +197,117 @@ public class MethodOverload{
 	}
 }
 ```
+
+## Methods: Character methods
+
+A collection of methodes that can be used on char types.
+
+**Character is defined:**
+
+```java
+char c = input.charAt(0); // get input character
+
+// display character info
+System.out.printf("is defined: %b%n", Character.isDefined(c));
+```
+
+**Character is digit:**
+
+```java
+char c = input.charAt(0); // get input character
+
+// display character info
+System.out.printf("is defined: %b%n", Character.isDigit(c));
+```
+
+**Character is first character in a java identifier:**
+
+```java
+char c = input.charAt(0); // get input character
+
+// display character info
+System.out.printf("is first character in a Java identifier: %b%n",Character.isJavaIdentifierStart(c));
+```
+
+**Character is part of a Java identifier:**
+
+```java
+char c = input.charAt(0); // get input character
+
+// display character info
+System.out.printf("is part of a Java identifier: %b%n",Character.isJavaIdentifierPart(c));
+```
+
+**Character is a letter:**
+
+```java
+char c = input.charAt(0); // get input character
+
+// display character info
+System.out.printf("is part of a Java identifier: %b%n",Character.isJavaIdentifierPart(c));
+```
+
+**Character is letter or digit:**
+
+```java
+char c = input.charAt(0); // get input character
+
+// display character info
+System.out.printf("is letter or digit: %b%n", Character.isLetterOrDigit(c));
+```
+
+**Character is lower case:**
+
+```java
+char c = input.charAt(0); // get input character
+
+// display character info
+System.out.printf("is letter or digit: %b%n", Character.isLetterOrDigit(c));
+```
+
+**Character is upper case:**
+
+```java
+char c = input.charAt(0); // get input character
+
+// display character info
+System.out.printf("is upper case: %b%n", Character.isUpperCase(c));
+```
+
+**Character to upper case:**
+
+```java
+char c = input.charAt(0); // get input character
+
+// display character info
+System.out.printf("to upper case: %s%n", Character.toUpperCase(c));
+```
+
+**Character to lower case:**
+
+```java
+char c = input.charAt(0); // get input character
+
+// display character info
+System.out.printf("to lower case: %s%n", Character.toLowerCase(c));
+```
+
+**Converting digit to character:**
+
+```java
+// convert digit to character
+System.out.println("Enter a digit:");
+int digit = scanner.nextInt();
+
+System.out.printf("Convert digit to character: %s%n",Character.forDigit(digit, radix));
+```
+
+**Converting character to digit:**
+
+```java
+// convert character to digit
+System.out.println("Enter a character:");
+char character = scanner.next().charAt(0);
+
+System.out.printf("Convert character to digit: %s%n",Character.digit(character, radix));
+```
