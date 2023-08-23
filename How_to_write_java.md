@@ -23,7 +23,10 @@ lCount = 1234235153143215231431;
 ```java
 double rPrice;
 
-rPrice = 5.25;
+rPrice = 5.258374819473289147;
+
+// Writing to 2 decimal places
+System.out.format("double : %.2f", rPrice);
 ```
 
 **Char:**
@@ -311,3 +314,75 @@ char character = scanner.next().charAt(0);
 
 System.out.printf("Convert character to digit: %s%n",Character.digit(character, radix));
 ```
+
+## Math Class
+
+The math class can be found in the java.lang.Math package but it's provided automatically.
+
+**Getting the value Pie:**
+
+```java
+doube rPie = Math.PI;
+```
+
+**Rounding methods:**
+
+Round down to the nearest integer(returns a double value)
+
+```java
+rNumbSmallBottles = Math.floor(rLiteresContainer / rSmallContainer);
+// Or
+iNumbSmallBottles = (int) Math.floor(rLiteresContainer / rSmallContainer);
+```
+
+Round up to the nearest integer(returns a double value):
+
+```java
+rNumbSmallBottles = Math.ceil(rLiteresContainer / rSmallContainer);
+// Or
+iNumbSmallBottles = Math.ceil(rLiteresContainer / rSmallContainer);
+```
+
+Simply just round off:
+
+```java
+int iValue1 = Math.round(4.6f); //returns the value 4
+long iValue2 = Math.round(12.5; //returns the value 13
+```
+
+**Exponent methods:**
+
+Calculate the square root of a value:
+
+```java
+double rRoot = Math.sqrt(25); //return the value 5.0
+```
+
+Calculate exponential equations
+
+```java
+double rExp = Math.pow(4.2, 2); // returns the value 17.64 = (4.2)^2
+```
+
+**Random method:**
+
+Return a pseudo-random number of data type double within a range:
+
+```java
+double x = Math.random(); // 0 <= x < 1.0
+double x = Math.random() * 25; // 0 <= x < 25.0
+double x = 7 + Math.random() * 58; // 7 <= x < 65.0
+```
+
+## Random Class
+
+import java.util.Random;
+
+The random class can be used to bet a random value.
+
+**Random Int:**
+
+```java
+Random randomizer = new Random();
+
+int iRandValue = randomizer.nextInt(15); // 0 <= iRandValue < 15
