@@ -386,3 +386,42 @@ The random class can be used to bet a random value.
 Random randomizer = new Random();
 
 int iRandValue = randomizer.nextInt(15); // 0 <= iRandValue < 15
+```
+
+## Arrays
+
+**Int Arrays:**
+
+```java
+new Int[] iCount = new Int[3];
+
+iCount[0] = 1;
+iCount[1] = 2;
+iCount[2] = 3;
+```
+
+**Double Arrays:**
+
+```java
+new Double[] rRange = new Double[3];
+
+rRange[0] = 1.20;
+rRange[1] = 2.40;
+rRange[2] = 3.35;
+```
+
+**Book Object Arrays:**
+
+```java
+
+Book[] shelf1 = new Book[2]
+
+shelf[0] = new Book();
+shelf[1] = new Book();
+
+shelf[0].title = "Moby Dick";
+shelf[0].author = "Herman Melville";
+
+shelf[1].title = "The Fellowship of the ring";
+shelf[1].author = "J.R.R Tolkien";
+```
