@@ -1,6 +1,8 @@
 # Reference material for writing java code
 
+
 ## Data types
+
 
 **Interger:**
 
@@ -45,7 +47,9 @@ String sName;
 sName = "Brian";
 ```
 
+
 ## Basic AgeGreeter.java file
+
 
 ```java
 public class AgeGreeter{
@@ -56,7 +60,9 @@ public class AgeGreeter{
 }
 ```
 
+
 ## Get input from the user
+
 
 ```java
 import java.util.Scanner;
@@ -80,7 +86,9 @@ public class PrintInput{
 - Double: keyboard.nextDouble();
 - Char: keyboard.next().charAt(0);
 
+
 ## Conditionals(Selection control structures)
+
 
 **If statements:**
 
@@ -122,7 +130,9 @@ switch(code){
 }
 ```
 
+
 ## Loops(Iteration control structures)
+
 
 **While loops:**
 
@@ -149,7 +159,9 @@ for (iCounter = 1; iCounter <= iHowmany; iCounter ++){
 }
 ```
 
+
 ## Methods: Static Methods
+
 
 **Value returning methods:**
 
@@ -201,18 +213,13 @@ public class MethodOverload{
 }
 ```
 
+
 ## Methods: Character methods
+
 
 A collection of methodes that can be used on char types.
 
-**Character is defined:**
-
-```java
-char c = input.charAt(0); // get input character
-
-// display character info
-System.out.printf("is defined: %b%n", Character.isDefined(c));
-```
+### Test Characters:
 
 **Character is digit:**
 
@@ -221,6 +228,60 @@ char c = input.charAt(0); // get input character
 
 // display character info
 System.out.printf("is defined: %b%n", Character.isDigit(c));
+```
+
+**Character is a letter:**
+
+```java
+char c = input.charAt(0); // get input character
+
+// display character info
+System.out.printf("is part of a Java identifier: %b%n",Character.isLetter(c));
+```
+
+**Character is letter or digit:**
+
+```java
+char c = input.charAt(0); // get input character
+
+// display character info
+System.out.printf("is letter or digit: %b%n", Character.isLetterOrDigit(c));
+```
+
+**Character is lower case:**
+
+```java
+char c = input.charAt(0); // get input character
+
+// display character info
+System.out.printf("is letter or digit: %b%n", Character.isLowerCase(c));
+```
+
+**Character is upper case:**
+
+```java
+char c = input.charAt(0); // get input character
+
+// display character info
+System.out.printf("is upper case: %b%n", Character.isUpperCase(c));
+```
+
+**Character is white space:**
+
+```java
+char c = input.charAt(0); // get input character
+
+// display character info
+System.out.printf("is upper case: %b%n", Characcter.isWhitespace(c));
+```
+
+**Character is defined:**
+
+```java
+char c = input.charAt(0); // get input character
+
+// display character info
+System.out.printf("is defined: %b%n", Character.isDefined(c));
 ```
 
 **Character is first character in a java identifier:**
@@ -241,41 +302,7 @@ char c = input.charAt(0); // get input character
 System.out.printf("is part of a Java identifier: %b%n",Character.isJavaIdentifierPart(c));
 ```
 
-**Character is a letter:**
-
-```java
-char c = input.charAt(0); // get input character
-
-// display character info
-System.out.printf("is part of a Java identifier: %b%n",Character.isJavaIdentifierPart(c));
-```
-
-**Character is letter or digit:**
-
-```java
-char c = input.charAt(0); // get input character
-
-// display character info
-System.out.printf("is letter or digit: %b%n", Character.isLetterOrDigit(c));
-```
-
-**Character is lower case:**
-
-```java
-char c = input.charAt(0); // get input character
-
-// display character info
-System.out.printf("is letter or digit: %b%n", Character.isLetterOrDigit(c));
-```
-
-**Character is upper case:**
-
-```java
-char c = input.charAt(0); // get input character
-
-// display character info
-System.out.printf("is upper case: %b%n", Character.isUpperCase(c));
-```
+### Change char:
 
 **Character to upper case:**
 
@@ -315,7 +342,9 @@ char character = scanner.next().charAt(0);
 System.out.printf("Convert character to digit: %s%n",Character.digit(character, radix));
 ```
 
+
 ## Math Class
+
 
 The math class can be found in the java.lang.Math package but it's provided automatically.
 
@@ -374,7 +403,9 @@ double x = Math.random() * 25; // 0 <= x < 25.0
 double x = 7 + Math.random() * 58; // 7 <= x < 65.0
 ```
 
+
 ## Random Class
+
 
 import java.util.Random;
 
@@ -388,7 +419,9 @@ Random randomizer = new Random();
 int iRandValue = randomizer.nextInt(15); // 0 <= iRandValue < 15
 ```
 
+
 ## Arrays
+
 
 **Int Arrays:**
 
