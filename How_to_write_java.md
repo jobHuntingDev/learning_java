@@ -55,7 +55,7 @@ sName = "Brian";
 public class AgeGreeter{
 
 	public static void main(String[] args){
-	 System.out.println("Hello world");	
+	 System.out.println("Hello world");
 	}
 }
 ```
@@ -75,13 +75,13 @@ public class PrintInput{
 	  String sInput;
 
 	// Get input from user and print it out:
-	Input = keyboard.nextLine(); 
+	Input = keyboard.nextLine();
 	}
 }
 ```
 ### Reading different types:
 - String(multple words): keyboard.nextLine();
-- String(single word): keyboard.next(); 
+- String(single word): keyboard.next();
 - Int: keyboard.nextInt();
 - Double: keyboard.nextDouble();
 - Char: keyboard.next().charAt(0);
@@ -94,7 +94,7 @@ public class PrintInput{
 
 ```java
  if(iAge >= 18){
-  System.out.println("What can I do for you?"); 
+  System.out.println("What can I do for you?");
  }
  else if(iAge >= 15){
   Sytem.out.println("What do yo want kid?");
@@ -171,7 +171,7 @@ public static double CelcToFahr(double rCelc){
  rFahr = rCelc * (9 / 5.0) + 32;
  return rFahr;
 }
-``` 
+```
 
 **Void methods:**
 
@@ -302,7 +302,7 @@ char c = input.charAt(0); // get input character
 System.out.printf("is part of a Java identifier: %b%n",Character.isJavaIdentifierPart(c));
 ```
 
-### Change char:
+### Change character:
 
 **Character to upper case:**
 
@@ -340,6 +340,105 @@ System.out.println("Enter a character:");
 char character = scanner.next().charAt(0);
 
 System.out.printf("Convert character to digit: %s%n",Character.digit(character, radix));
+```
+
+
+## Methods: String methods
+
+
+Note: strings have index values for each character, so in a sense strings are just an array of characters. 
+
+**Get String length:**
+
+```java
+int lengthOfString;
+String example = "Example string";
+
+int lengthOfString = example.length();
+
+System.out.prinln("The length of the string is " + lengthOfString);
+```
+
+**Get character at index:**
+
+```java
+String example = "Example string";
+
+char index3 = example.charAt(3);
+
+System.out.prinln("The character at index 3 is " + index3);
+```
+
+**Get a string from the string:**
+
+```java
+String example = "Cut Out Hello from me";
+
+String newString = example.substring(8,12);
+
+System.out.prinln(newString + " World");
+```
+
+**Convert a string to upper case:**
+
+```java
+String example = "hello world";
+
+example.toUpperCase();
+
+System.out.println(example);
+```
+
+**Convert a string to lower case:**
+
+```java
+String example = "hello world";
+
+example.toLowerCase();
+
+System.out.println(example);
+```
+
+**Replace character in a string:**
+
+```java
+String example = "Vello World";
+
+example.replace('V','H');
+
+System.out.println(example);
+```
+
+**Compare two strings(case sensitive):**
+
+```java
+String example1 = "Hello World";
+String example2 = "hello world";
+
+if(example1.equals(example2)){
+	System.out.println("These two are exactly the same");
+}
+```
+
+**Compare two strings:**
+
+```java
+String example1 = "Hello World";
+String example2 = "hello world";
+
+if(example1.equalsIgnoreCase(example2)){
+	System.out.println("These two say the same thing");
+}
+```
+
+**Convert String to digits:**
+
+```java
+String example1 = "1234";
+String example2 = "2353.23";
+
+int iExample1 = Integer.parseInt(example1);
+double rExample2 = Double.parseDouble(example2);
 ```
 
 
