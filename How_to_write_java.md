@@ -346,7 +346,7 @@ System.out.printf("Convert character to digit: %s%n",Character.digit(character, 
 ## Methods: String methods
 
 
-Note: strings have index values for each character, so in a sense strings are just an array of characters. 
+Note: strings have index values for each character, so in a sense strings are just an array of characters.
 
 **Get String length:**
 
@@ -450,7 +450,7 @@ The math class can be found in the java.lang.Math package but it's provided auto
 **Getting the value Pie:**
 
 ```java
-doube rPie = Math.PI;
+double rPie = Math.PI;
 ```
 
 **Rounding methods:**
@@ -458,17 +458,17 @@ doube rPie = Math.PI;
 Round down to the nearest integer(returns a double value)
 
 ```java
-rNumbSmallBottles = Math.floor(rLiteresContainer / rSmallContainer);
+double rNumbSmallBottles = Math.floor(rLiteresContainer / rSmallContainer);
 // Or
-iNumbSmallBottles = (int) Math.floor(rLiteresContainer / rSmallContainer);
+int iNumbSmallBottles = (int) Math.floor(rLiteresContainer /rSmallContainer);
 ```
 
 Round up to the nearest integer(returns a double value):
 
 ```java
-rNumbSmallBottles = Math.ceil(rLiteresContainer / rSmallContainer);
+double rNumbSmallBottles = Math.ceil(rLiteresContainer / rSmallContainer);
 // Or
-iNumbSmallBottles = Math.ceil(rLiteresContainer / rSmallContainer);
+int iNumbSmallBottles = Math.ceil(rLiteresContainer / rSmallContainer);
 ```
 
 Simply just round off:
@@ -506,16 +506,36 @@ double x = 7 + Math.random() * 58; // 7 <= x < 65.0
 ## Random Class
 
 
-import java.util.Random;
-
 The random class can be used to bet a random value.
 
 **Random Int:**
 
 ```java
+import java.util.Random;
+
 Random randomizer = new Random();
 
 int iRandValue = randomizer.nextInt(15); // 0 <= iRandValue < 15
+```
+
+**Random Double:**
+
+```Java
+import java.util.Random;
+
+Random randomizer = new Random();
+
+double rValue = randomizer.nextDouble(20); // 0 <= rValue < 20
+```
+
+**Random Boolean:**
+
+```java
+import java.util.Random;
+
+Random randomizer = new Random();
+
+boolean bValue = randomizer.nextBoolean(20); // 0 <= rValue < 20
 ```
 
 
@@ -525,7 +545,7 @@ int iRandValue = randomizer.nextInt(15); // 0 <= iRandValue < 15
 **Int Arrays:**
 
 ```java
-new Int[] iCount = new Int[3];
+new int[] iCount = new int[3];
 
 iCount[0] = 1;
 iCount[1] = 2;
