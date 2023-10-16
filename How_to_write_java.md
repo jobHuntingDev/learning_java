@@ -577,3 +577,87 @@ shelf[0].author = "Herman Melville";
 shelf[1].title = "The Fellowship of the ring";
 shelf[1].author = "J.R.R Tolkien";
 ```
+
+**Perfoming a buble sort:**
+
+```java
+// Bubble sort
+    int numbCompares = unsortedArray.length - 1;
+
+    for(int i=0; i<unsortedArray.length; i++){
+      for(int j=0; j< numbCompares; j++){
+        int k = j +1;
+
+        if(unsortedArray[j] > unsortedArray[k]){
+          int temp = unsortedArray[j];
+          unsortedArray[j] = unsortedArray[k];
+          unsortedArray[k] = temp;
+        }
+
+      }
+      --numbCompares;
+    }
+```
+
+## User defined class's
+
+How to write a concrete class.A class without a main method
+
+```java
+// An example of a concrete class
+
+public class Politician{
+ private String surname;
+ private String position;
+ private String politicalParty;
+
+ public Politician(){
+  surname = "SURNAME";
+  position = "NOT APPOINTED YET";
+  politicalParty = "MUST MAKE UP YOUR MIND";
+ }
+ 
+ public Politician(String pSurname,String pPositon,String pPoliticalParty){
+  surname = pSurname;
+  position = pPositon;
+  politicalParty = pPoliticalParty;
+ }
+
+ public void setSurname(String pSurname){
+  surname = pSurname;
+ }
+
+ public void setPosition(String pPosition){
+  position = pPosition;
+ }
+
+ public  void setPoliticalParty(String pPoliticalParty){
+  politicalParty = pPoliticalParty;
+ }
+
+ public String getSurname(){
+  return surname;
+ }
+
+ public String getPosition(){
+  return position;
+ }
+
+ public String getPolititcalParty(){
+  return politicalParty;
+ }
+
+ public static boolean goodPolitician(int budget, double moneySpend){
+  boolean good = false;
+  
+  double spending = (moneySpend/budget) * 100.0;
+
+  if( spending < 100){
+   good = true;
+  }
+
+  return good; 
+ }
+
+}
+```
