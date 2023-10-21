@@ -27,8 +27,20 @@ double rPrice;
 
 rPrice = 5.258374819473289147;
 
+System.out.println("double" +  rPrice);
+```
+**Double 2 decimal places:**
+
+```java
+//import java.text.DecimalFormat;
+DecimalFormat df = new DecimalFormat("0.00");
+
+double rPrice;
+
+rPrice = 5.258374819473289147;
+
 // Writing to 2 decimal places
-System.out.format("double : %.2f", rPrice);
+System.out.println("double" +  df.format(rPrice));
 ```
 
 **Char:**
@@ -545,7 +557,7 @@ boolean bValue = randomizer.nextBoolean(20); // 0 <= rValue < 20
 **Int Arrays:**
 
 ```java
-new int[] iCount = new int[3];
+int[] iCount = new int[3];
 
 iCount[0] = 1;
 iCount[1] = 2;
@@ -555,7 +567,7 @@ iCount[2] = 3;
 **Double Arrays:**
 
 ```java
-new Double[] rRange = new Double[3];
+Double[] rRange = new Double[3];
 
 rRange[0] = 1.20;
 rRange[1] = 2.40;
@@ -565,7 +577,6 @@ rRange[2] = 3.35;
 **Book Object Arrays:**
 
 ```java
-
 Book[] shelf1 = new Book[2]
 
 shelf[0] = new Book();
