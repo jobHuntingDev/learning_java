@@ -414,11 +414,13 @@ System.out.println(example);
 **Replace character in a string:**
 
 ```java
-String example = "Vello World";
+String example = "Vello World this is my Vouse";
 
-example.replace('V','H');
+example = example.replace('V','H');
 
 System.out.println(example);
+
+# output: Hello World this is my House
 ```
 
 **Compare two strings(case sensitive):**
