@@ -225,6 +225,35 @@ public class MethodOverload{
 }
 ```
 
+**A property of methods:**
+
+Funny enough it seems java methods are quite different from function in other programs in that it would seem assigned values can be carried but I'm not sure how or why this works but here's an example of it.
+
+```java
+import java.util.Random;
+
+public class TestAssignMethods{
+
+  public static void populateRandomInts(int[] values){
+    Random randomizer = new Random();
+
+    for(int i=0;i<values.length;i++){
+      values[i] = randomizer.nextInt(100);
+    }
+  }
+
+  public static void main(String[] args){
+    int[] randomInts = new int[10];
+
+    populateRandomInts(randomInts);
+
+    for(int i=0;i<randomInts.length; i++){
+      System.out.println(randomInts[i]);
+    }
+  }
+}
+```
+
 
 ## Methods: Character methods
 
