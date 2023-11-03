@@ -452,7 +452,26 @@ System.out.println(example);
 # output: Hello World this is my House
 ```
 
-**Compare two strings(case sensitive):**
+**Compaire two strings:**
+
+```java
+String sName1 = "John";
+String sName2 = "Joanne";
+
+if (sName1.compareTo(sName2) == 0){
+  System.out.println(sName1 + " is the same as " + sName2);
+}
+
+if (sName1.compareTo(sName2) < 0){
+  System.out.println(sName1 + " is smaller than " + sName2);
+}
+
+if (sName1.compareTo(sName2) > 0){
+  System.out.println(sName1 + " is bigger than " + sName2);
+}
+```
+
+**Equality(case sensitive):**
 
 ```java
 String example1 = "Hello World";
@@ -463,7 +482,7 @@ if(example1.equals(example2)){
 }
 ```
 
-**Compare two strings:**
+**Equality(Ignore case sensitive):**
 
 ```java
 String example1 = "Hello World";
@@ -620,7 +639,7 @@ shelf[1].title = "The Fellowship of the ring";
 shelf[1].author = "J.R.R Tolkien";
 ```
 
-**Perfoming a buble sort:**
+**Perfoming a bubble sort:**
 
 ```java
 // Bubble sort
@@ -640,6 +659,25 @@ shelf[1].author = "J.R.R Tolkien";
       --numbCompares;
     }
 ```
+
+**Bubble sorting String:**
+
+```java
+for(int i=0;i<names.length;i++){
+
+    for(int j=0;j<names.length-1;j++){
+
+	if(names[j].compareTo(names[j+1]) < 0){
+            String temp = names[j];
+            names[j] = names[j+1];
+            names[j+1] = temp;
+	}
+
+    }
+
+}
+```
+
 
 ## User defined class's
 
