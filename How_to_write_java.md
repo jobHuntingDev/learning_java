@@ -1,5 +1,6 @@
 # Reference material for writing java code
 
+# First and Second year
 
 ## Data types
 
@@ -739,5 +740,67 @@ public class Politician{
   return good; 
  }
 
+}
+```
+
+# Third year
+
+## Gui: Graphical user interfaces
+
+### JOpionPane:
+
+Confirm dialog.
+
+```java
+import java.swing.JOptionPane;
+
+public class Main{
+
+	public static void main(String[] args){
+		// JOptionPane.showMessageDialog(parentComponent, messageStringExpression, boxTitleString, messageType);
+		JOptionPane.showMessageDialog(null, "Hallo World!", "Greetings",JOptionPane.INFORMATION_MESSAGE);
+	}
+}
+```
+
+Other message types:
+ - Error message: JOptionPane.**ERROR_MESSAGE**
+ - Error message: JOptionPane.**INFORMATION_MESSAGE**
+ - Error message: JOptionPane.**PLAIN_MESSAGE**
+ - Error message: JOptionPane.**QUESTION_MESSAGE**
+ - Error message: JOptionPane.**WARNING_MESSAGE**
+
+Get input.
+
+```java
+import java.swing.JOptionPane;
+
+public class Main{
+
+	public static void main(String[] args){
+		//String variable_name = JOptionPane.showInputDialog(<Message>);
+
+		String input = JOptionPane.showInputDialog("Enter the day of the week.");
+	}
+}
+```
+
+Confirmation input. give the user a question and want a yes no or cancel answer
+
+```java
+import java.swing.JOptionPane;
+
+public class Main{
+
+	public static void main(String[] args){
+		int option = JOptionPane.showConfirmDialog(null, "Question");
+
+		if(option == JOptionPane.YES_OPTION):
+			// yes button pressed
+		else if(option == JOptionPane.NO_OPTION):
+			// no button pressed
+		else if(option == JOptionPane.CANCEL_OPTION):
+			// cancel button pressed
+	}
 }
 ```
