@@ -804,3 +804,67 @@ public class Main{
 	}
 }
 ```
+
+## ArrayList
+
+An ArrayList is a resizable array from the java.util package.
+
+```java
+import java.util.ArrayList;
+
+public class LearnArrayList{
+
+	public static void main(String[] args){
+		// Declaring an array list named cities of type String
+		ArrayList<String> cities = new ArrayList<String>();
+
+		// Array List Methods:
+		// Adding a value to the array
+		cities.add("Pretoria");
+		cities.add("Johannesburg");
+		cities.add("Durban");
+		System.out.println(cities);
+
+		// Get a specific value (the first value)
+		System.out.println(cities.get(0));
+
+		// Change a specific value
+		cities.set(0,"Durban");	
+		System.out.println(cities);
+
+		// Remove a value
+		cities.remove(0);
+		System.out.println(cities);
+
+		// Get the number of items in the array
+		System.out.println(cities.size());
+
+		// Empty out the array
+		cities.clear();
+		System.out.println(cities);
+	}
+}
+```
+
+Looping through an arraylist using the java for-each loop.
+
+```java
+import java.util.ArrayList;
+
+public class LearnArrayList{
+
+	public static void main(String[] args){
+			
+		ArrayList<String> cities = new ArrayList<String>();
+
+		cities.add("Pretoria");
+		cities.add("Johannesburg");
+		cities.add("Durban");
+
+		// java for-each loop
+		for(String i : cities){
+			System.out.println(i);
+		}
+	}
+}
+```
