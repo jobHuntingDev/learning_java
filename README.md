@@ -752,7 +752,7 @@ public class Politician{
 Confirm dialog.
 
 ```java
-import java.swing.JOptionPane;
+import javax.swing.JOptionPane;
 
 public class Main{
 
@@ -773,7 +773,7 @@ Other message types:
 Get input.
 
 ```java
-import java.swing.JOptionPane;
+import javax.swing.JOptionPane;
 
 public class Main{
 
@@ -788,7 +788,7 @@ public class Main{
 Confirmation input. give the user a question and want a yes no or cancel answer
 
 ```java
-import java.swing.JOptionPane;
+import javax.swing.JOptionPane;
 
 public class Main{
 
